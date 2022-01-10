@@ -67,7 +67,7 @@ $ bundler binstub --standalone cucumber
 ```
 5. Remove Rubygems from the system to prevent the ability to load it.
 ```console
-$ sudo dnf install --assumeyes rubygems
+$ sudo dnf remove --assumeyes rubygems
 ```
 6. Run the test suite, with the bundler generated `setup.rb` preloaded,
 which sets up load paths without rubygems.
